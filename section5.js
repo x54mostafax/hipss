@@ -10,7 +10,7 @@ const port = 4000;
 const url = process.env.MONGOOSE_URL;
 mongoose.connect(url).then(res => {
   console.log("Good Databases");
-  app.listen(process.env.PORT ?? 4000, (req, res) => {
+  app.listen(process.env.PORT ?? 4430, (req, res) => {
     console.log("the server is ON.");
   });
 }).catch((err) => {
